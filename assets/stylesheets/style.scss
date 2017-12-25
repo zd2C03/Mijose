@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+@import 'bootstrap';
+//変数宣言
+// gray #727171
+// yellow #f7ed0a
+// orange #f8b624
+/* base */
+body {
+    font-family:'游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Lora',sans-serif;
+    color: #727171;
+}
+.text-muted {
+    color: #727171;
+}
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+p.large {
+    font-size: 16px;
+    margin-top: 50px;
+}
+a {
+    color: #727171;
+    &:hover {
+        color: darken(#727171,15%);
+    }
+}
+
+h1 {
+    margin:0px;
+    color: #727171;
+    font-size: 18px;
+    line-height: 20px;
+}
+h1,h2,h3{
+    font-family: 'Lora',"Montserrat", "Helvetica Neue", Helvetica, Arial,sans-serif;
+    font-weight: 700;
+}
+.bg-light-gray {
+    background-color: #eeeeee;
+}
+.bg-darkest-gray {
+    background-color: #222222;
+}
+.col-md-12 {
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+}
+.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* section */
+section {
+    padding: 80px 0;
+    .section-subheading {
+        font-size: 16px;
+        margin-bottom: 75px;
+        display: block;
+        margin-top: 5px;
+    }
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+}
+
+/* hero */
+.business-header {
+    height: 200px;
+    padding-top: 50px;
+    @media (min-width: 768px) {
+        height: 400px;
+    }
+}
+
+/* contact */
+#contact {
+    .form-group {
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 20px;
+        }
+        input.form-control {
+            height: auto;
+            width: 20px;
+        }
+        textarea.form-control {
+            height: 236px;
+        }
+    }
+}
+.btn-xl {
+    color: white;
+    background-color: #727171;
+    font-family: "Lora" "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 15px 30px;
+    &:hover{
+        color: white;
+        background-color: darken(#727171,15%);
+    }
+}
+/* Footer */
+footer {
+    padding: 100px 0;
+    hr.small {
+        width: 100%;
+    }
+}
