@@ -56,7 +56,14 @@ h1,h2,h3{
 
 /* section */
 .selection {
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
     margin: 15px 15px;
+    color: white;
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 3px;
 }
 .section-heading {
     font-size: 40px;
